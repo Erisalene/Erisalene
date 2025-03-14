@@ -1,13 +1,25 @@
-n = 5
+a = int(input ("Введіть а: "))
 
-for i in range(1, n + 1):
+while (a < 1 or a > 100):
 
-    num = 1
-    for j in range(n, 0, -1):
-        if j < i:
-            print(" ", end = " ")
-        else:
-            print(num, end = " ")
-            num += 1
-    print("")
-   
+    a = int(input ("Введіть а: "))
+
+b = int(input ("Введіть b: "))
+
+while (b < 1 or b > 100):
+
+    b = int(input ("Введіть ще раз b: "))
+
+if a < b:
+
+    r = (b / a - 1)
+
+elif a == b:
+
+    r = -295
+
+elif a > b:
+
+    r = (a - 235) / b
+
+print("Результат обчислення виразу: " , r)
